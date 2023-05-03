@@ -1,7 +1,5 @@
 import { RecommendedKeywords } from '../@types/search';
-
-const UP_ARROW_KEY = 38;
-const DOWN_ARROW_KEY = 40;
+import { DOWN_ARROW_KEY, UP_ARROW_KEY } from './const';
 
 export type keydownHandlerProps = {
   e: { keyCode: number };
