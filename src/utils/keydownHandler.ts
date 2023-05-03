@@ -1,3 +1,5 @@
+import { RecommendedKeywords } from '../@types/search';
+
 const UP_ARROW_KEY = 38;
 const DOWN_ARROW_KEY = 40;
 
@@ -5,7 +7,7 @@ export type keydownHandlerProps = {
   e: { keyCode: number };
   activeNumber: number;
   setActiveNumber: React.Dispatch<React.SetStateAction<number>>;
-  recommendedKeywords: [{ name: string; id: number }];
+  recommendedKeywords: RecommendedKeywords[];
 };
 
 export const keydownHandler = ({
